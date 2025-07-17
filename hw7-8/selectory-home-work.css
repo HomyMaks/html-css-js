@@ -1,0 +1,46 @@
+body, h1, h2, p, 
+div, section, article, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+h1, h2 {
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+* {
+    font-family: 'Lato', sans-serif;
+    color: #464646;
+}
+#body {
+    width: 55%;
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+header, p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
+    background-color: #dbeaee;
+}
+p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
+    text-transform: uppercase;
+}
+nav, footer {
+    background-color: #464646;
+}
+p:nth-of-type(3):hover, p:nth-of-type(4):hover, p:nth-of-type(5):hover {
+    font-weight: 900;
+    color: #fff;
+    background-color: #2974a6d7;
+    cursor: pointer;
+}
+li:hover {
+    color: #425c63;
+    background-color: #dbeaee;
+}
+a:active {
+    color: #2874a6d7;
+}
