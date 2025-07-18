@@ -6,30 +6,66 @@ div, section, article, header, footer {
     font-size: 100%;
     font: inherit;
 }
+div.stars-group {
+    text-align: center;
+}
+div.star {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px 0 5px;
+}
+
+div.star:hover {
+
+    content: url(./img/colored-diamond.png);
+    width: 100px;
+}
+
 h1, h2 {
     font-family: 'Bitter', serif;
     text-transform: uppercase;
     text-align: center;
+    padding: 1.5vw 0 1.5vw 0;
+    font-size: 1.5vw;
 }
-* {
+body {
     font-family: 'Lato', sans-serif;
     color: #464646;
+    width: 55%;
 }
 #body {
-    width: 55%;
+    /* width: 55%; */
     text-align: center;
 }
 footer{
     text-align: center;
+    /* width: 55%; */
+    color: #fff;
+    padding: 1vw 0 1vw 0;
+    font-size: 10px;
+}
+header {
+    /* width: 55%; */
+    
 }
 header, p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
     background-color: #dbeaee;
 }
 p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
     text-transform: uppercase;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 1vw;
+    border-radius: 30px;
+    padding: 1vw;
+    
 }
 nav, footer {
     background-color: #464646;
+}
+p:not(footer p) {
+    font-size: 0.7vw;
+    margin: 1vw; 
 }
 p:nth-of-type(3):hover, p:nth-of-type(4):hover, p:nth-of-type(5):hover {
     font-weight: 900;
@@ -37,10 +73,26 @@ p:nth-of-type(3):hover, p:nth-of-type(4):hover, p:nth-of-type(5):hover {
     background-color: #2974a6d7;
     cursor: pointer;
 }
+
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 1vw;
+    margin-left: 3vw;
+}
 li:hover {
-    color: #425c63;
+    /* color: #425c63; */
     background-color: #dbeaee;
 }
-a:active {
+li:hover a {
+    color: #425c63;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+li a:active {
     color: #2874a6d7;
 }
+
+
