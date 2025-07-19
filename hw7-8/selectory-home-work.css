@@ -15,9 +15,14 @@ div.star {
     padding: 10px 5px 0 5px;
 }
 
-div.star:hover {
+.stars-group:hover .star {
 
     content: url(./img/colored-diamond.png);
+    width: 100px;
+}
+.star:hover ~ .star{
+
+    content: url(./img/white-diamond.png);
     width: 100px;
 }
 
@@ -44,10 +49,7 @@ footer{
     padding: 1vw 0 1vw 0;
     font-size: 10px;
 }
-header {
-    /* width: 55%; */
-    
-}
+
 header, p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
     background-color: #dbeaee;
 }
