@@ -31,7 +31,7 @@ h1, h2 {
     text-transform: uppercase;
     text-align: center;
     padding: 1.5vw 0 1.5vw 0;
-    font-size: 1.5vw;
+    font-size: 1.6em;
 }
 body {
     font-family: 'Lato', sans-serif;
@@ -48,7 +48,7 @@ footer{
     /* width: 55%; */
     color: #fff;
     padding: 1vw 0 1vw 0;
-    font-size: 10px;
+    font-size: 0.7em;
 }
 
 header, #body h2 ~ p {
@@ -71,7 +71,7 @@ nav, footer {
     background-color: #464646;
 }
 p:not(footer p) {
-    font-size: 0.7vw;
+    font-size: 0.8em;
     margin: 1vw; 
 }
 #body h2 ~ p:hover {
