@@ -51,10 +51,10 @@ footer{
     font-size: 10px;
 }
 
-header, p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
+header, #body h2 ~ p {
     background-color: #dbeaee;
 }
-p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5) {
+#body h2 ~ p {
     text-transform: uppercase;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -74,7 +74,7 @@ p:not(footer p) {
     font-size: 0.7vw;
     margin: 1vw; 
 }
-p:nth-of-type(3):hover, p:nth-of-type(4):hover, p:nth-of-type(5):hover {
+#body h2 ~ p:hover {
     font-weight: 900;
     color: #fff;
     background-color: #2974a6d7;
