@@ -8,14 +8,25 @@ div, section, article, header, footer {
 }
 div.stars-group {
     text-align: center;
+    transform: rotateY(180deg);
 }
 div.star {
     display: inline-block;
     text-align: center;
     padding: 10px 5px 0 5px;
+
+}
+.star:hover{
+    content: url(./img/colored-diamond.png);
+    width: 100px;
+}
+.star:hover ~ .star {
+    content: url(./img/colored-diamond.png);
+    width: 100px;
 }
 
-.stars-group:hover .star {
+/* старый вариант звёзд */
+/* .stars-group:hover .star {
 
     content: url(./img/colored-diamond.png);
     width: 100px;
@@ -24,7 +35,7 @@ div.star {
 
     content: url(./img/white-diamond.png);
     width: 100px;
-}
+} */
 
 h1, h2 {
     font-family: 'Bitter', serif;
@@ -37,6 +48,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #464646;
     /* width: 55%; */
+    
 }
 #body {
     width: 55%;
