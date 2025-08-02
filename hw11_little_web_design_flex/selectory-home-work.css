@@ -1,0 +1,197 @@
+body, h1, h2, p, 
+div, section, article, header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+div.stars-group {
+    text-align: center;
+    transform: rotateY(180deg);
+}
+div.star {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px 0 5px;
+
+}
+.star:hover{
+    content: url(./img/colored-diamond.png);
+    width: 100px;
+}
+.star:hover ~ .star {
+    content: url(./img/colored-diamond.png);
+    width: 100px;
+}
+
+/* старый вариант звёзд */
+/* .stars-group:hover .star {
+
+    content: url(./img/colored-diamond.png);
+    width: 100px;
+}
+.star:hover ~ .star{
+
+    content: url(./img/white-diamond.png);
+    width: 100px;
+} */
+
+h1, h2 {
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5vw 0 1.5vw 0;
+    font-size: 1.6em;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: #464646;
+    /* width: 55%; */
+    
+    
+}
+#body {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    /* width: 55%; */
+    color: #fff;
+    padding: 1vw 0 1vw 0;
+    font-size: 0.7em;
+}
+
+header, #body h2 ~ p {
+    background-color: #dbeaee;
+}
+#body h2 ~ p {
+    text-transform: uppercase;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 1vw;
+    border-radius: 30px;
+    padding: 1vw;
+    
+}
+nav {
+    text-align: center;
+    margin: 0 auto;
+}
+nav, footer {
+    background-color: #464646;
+}
+p:not(footer p) {
+    font-size: 0.8em;
+    margin: 1vw; 
+}
+#body h2 ~ p:hover {
+    font-weight: 900;
+    color: #fff;
+    background-color: #2974a6d7;
+    cursor: pointer;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 1vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+ul {
+    padding: 0;
+}
+li:hover {
+    /* color: #425c63; */
+    background-color: #dbeaee;
+}
+li:hover a {
+    color: #425c63;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+li a:active {
+    color: #2874a6d7;
+}
+@keyframes spin {
+    100% {transform: rotatez(360deg);}
+}
+@keyframes bell {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(45deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-45deg); }
+    100% { transform: rotate(0deg); }
+}
+.spinner {
+    width: 20px;
+    animation: spin 10s linear infinite;
+    margin-right: 1.5vw;
+}
+.bell {
+    width: 20px;
+    animation: bell 3s linear infinite;
+    margin-right: 1.5vw;
+}
+.flex-area {
+    padding: 2vw;
+    text-align: center;
+}
+.flex-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.flex-block {
+    display: flex;
+    gap: 1vw;
+}
+.text {
+    flex: 1;
+    padding: 10px;
+}
+.image {
+    flex: 2;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .branding {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    
+    
+}
+.flex-img {
+    flex-basis: ;
+}
+
+.flex-text {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+} */
