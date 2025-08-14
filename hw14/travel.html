@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        body {
+            padding: 20px;
+        }
         #grid {
             display: grid;
             gap: 20px;
@@ -114,7 +116,7 @@
         }
         @media all and (max-width: 414px){
             #grid {
-                grid-template-rows: repeat(4, minmax(300px, 1fr));
+                grid-template-rows: repeat(6, minmax(300px, 1fr));
                 grid-template-areas: 
                 "bali"
                 "spain" 
