@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        #grid > div {
+            text-align: center;
+            transition: all 0.3s;
+        }
+        #grid > div:hover > h1 {
+            visibility: hidden;
+        }
+        .bali:hover {
+            transform: scale(1.05);
+            background-image: url(./images/Bali.jpg);
+        }
+        .spain:hover {
+            transform: scale(1.05);
+            background-image: url(./images/Spain.jpg);
+        }
+        .egypt:hover {
+            transform: scale(1.05);
+            background-image: url(./images/Egypt.jpg);
+        }
+        .czech:hover {
+            transform: scale(1.05);
+            background-image: url(./images/Czech.jpg);
+        }
+        .turkey:hover {
+            transform: scale(1.05);
+            background-image: url(./images/Turkey.jpg);
+        }
+        .italy:hover {
+            transform: scale(1.05);
+            background-image: url(./images/Italy.jpg);
+        }
+                                                
+        .bali {
+            background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(./images/Bali.jpg);
+            overflow: hidden;
+            background-size: cover;
+        }
+        .spain {
+            background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(./images/Spain.jpg);
+            overflow: hidden;
+            background-size: cover;
+        }
+        .egypt {
+            background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(./images/Egypt.jpg);
+            overflow: hidden;
+            background-size: cover;
+        }
+        .czech {
+            background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(./images/Czech.jpg);
+            overflow: hidden;
+            background-size: cover;
+        }
+        .turkey {
+            background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(./images/Turkey.jpg);
+            overflow: hidden;
+            background-size: cover;
+        }        
+        .italy {
+            background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(./images/Italy.jpg);
+            overflow: hidden;
+            background-size: cover;
+        }    
+        .bali {
+            grid-area: bali;
+        }
+        .spain {
+            grid-area: spain;
+            min-width: px;
+        }
+        .egypt {
+            grid-area: egypt;
+        }
+        .czech {
+            grid-area: czech;
+        }
+        .turkey {
+            grid-area: turkey;
+        }
+        .italy {
+            grid-area: italy;
+        }          
+        @media all and (min-width: 769px) {
+            #grid {
+                grid-template-rows: repeat(3, minmax(300px, 1fr));
+                grid-template-areas: 
+                "spain bali bali"
+                "spain egypt czech"
+                "spain turkey italy";
+            }
+                                                                        
+        }
+        @media all and (max-width: 768px){
+            #grid {
+                grid-template-rows: repeat(4, minmax(300px, 1fr));
+                grid-template-areas: 
+                "bali bali"
+                "spain egypt"
+                "spain czech"
+                "turkey italy";
+            }
+        }
+        @media all and (max-width: 414px){
+            #grid {
+                grid-template-rows: repeat(4, minmax(300px, 1fr));
+                grid-template-areas: 
+                "bali"
+                "spain" 
+                "egypt"
+                "czech"
+                "turkey" 
+                "italy";
+            }
+        }        
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="bali"><h1>Бали</h1></div>
+        <div class="spain"><h1>Испания</h1></div>
+        <div class="egypt"><h1>Египет</h1></div>
+        <div class="czech"><h1>Чехия</h1></div>
+        <div class="turkey"><h1>Турция</h1></div>
+        <div class="italy"><h1>Италия</h1></div>        
+    </div>
+</body>
+</html>
