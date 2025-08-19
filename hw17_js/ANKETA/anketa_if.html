@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anketa_if</title>
+</head>
+<body>
+    <script>
+        let surname = prompt('Фамилия:')
+        let name = prompt('Имя:')
+        let patronymic = prompt('Отчество:')
+        let age = Number(prompt('Возраст (в годах):'))
+        let gender = confirm('Ваш пол мужской?')
+        let age_inDays = age * 365
+        let age_in5years = age + 5
+        let pension = null 
+        if (gender) {
+            gender = 'мужской'
+        } else {
+            gender = 'женский'
+        }
+        if (age >= 70) {
+            pension = 'да'
+        } else {
+            pension = 'нет'
+        }
+        alert(`ваше ФИО: ${surname} ${name} ${patronymic}\nваш возраст в годах: ${age}\nваш возраст в днях: ${age_inDays}\nчерез 5 лет вам будет ${age_in5years}\nваш пол: ${gender}\nвы на пенсии: ${pension}`)
+    </script>
+</body>
+</html>
