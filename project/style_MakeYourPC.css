@@ -1,0 +1,70 @@
+.hero-content .btn {
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+hr.divider {
+    margin-top: 6em;
+}
+
+.purpose-cards,
+.cpu-cards,
+.motherboard-cards,
+.gpu-cards,
+.ram-cards,
+.storage-cards,
+.cooling-cards,
+.psu-cards,
+.case-cards,
+.summary-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.purpose-cards .btn,
+.cpu-cards .btn,
+.motherboard-cards .btn,
+.gpu-cards .btn,
+.ram-cards .btn,
+.storage-cards .btn,
+.cooling-cards .btn,
+.psu-cards .btn,
+.case-cards .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;    
+}
+
+.summary p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.summary h3 {
+    display: inline-block;
+    margin: 0;
+}
+
+.summary-cards .card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#total-price {
+    font-size: 2em;
+}
+
+.summary-total {
+    margin: auto;
+}
+
+@media screen and (max-width: 590px){
+    .summary-total {
+        margin: auto auto 0 0;
+    }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCCraft</title>
+    <link rel="stylesheet" href="./style_main.css" />
+    <link rel="stylesheet" href="./style_MakeYourPC.css" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">PCCraft</div>
+      <nav class="nav">
+        <a href="./main_aboutUs.html#home">Home</a>
+        <a href="./main_aboutUs.html#discover">Discover</a>
+        <a href="./main_aboutUs.html#service">Services</a>
+        <a href="./main_aboutUs.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Make Your Own PC</h1>
+        <p>
+          Choose your components, get expert guidance, and assemble with
+          confidence.
+        </p>
+        <div class="card">
+          <a href="#start" class="btn">Let's Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="purpose" id="start">
+      <h2>What will you use your PC for?</h2>
+      <p>
+        Based on your selection, we’ll show you the most suitable components for
+        your needs.
+      </p>
+      <div class="purpose-cards">
+        <div class="card">
+          <button class="btn" data-purpose="gaming">Gaming</button>
+          <button class="btn" data-purpose="work">Work</button>
+          <button class="btn" data-purpose="study">Study</button>
+        </div>
+      </div>
+      <hr class="divider">
+    </section>
+
+    
+
+    <section class="cpu hidden">
+        <h2>Choose your CPU</h2>
+        <p>Select a processor that matches your performance needs.</p>
+        <div class="cpu-cards">
+            <div class="cpu-group gaming card">
+                <button class="btn" data-cpu="Intel i7-13700K" data-socket="LGA1700" data-price="350">Intel i7-13700K &#8211; &#36;350</button>
+                <button class="btn" data-cpu="Ryzen 7 7800X3D" data-socket="AM5" data-price="370">Ryzen 7 7800X3D &#8211; &#36;370</button>
+            </div>
+            <div class="cpu-group work card">
+                <button class="btn" data-cpu="Intel i9-13900" data-socket="LGA1700" data-price="500">Intel i9-13900 &#8211; &#36;500</button>
+                <button class="btn" data-cpu="Ryzen 9 7950X" data-socket="AM5" data-price="520">Ryzen 9 7950X &#8211; &#36;520</button>
+            </div>
+            <div class="cpu-group study card">
+                <button class="btn" data-cpu="Intel i3-12100" data-socket="LGA1700" data-price="110">Intel i3-12100 &#8211; &#36;110</button>
+                <button class="btn" data-cpu="Ryzen 5 5600G" data-socket="AM4" data-price="130">Ryzen 5 5600G &#8211; &#36;130</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    
+
+    <section class="motherboard hidden">
+        <h2>Choose your Motherboard</h2>
+        <p>We’ll show boards compatible with your selected CPU socket.</p>
+        <div class="motherboard-cards">
+            <div class="board-group LGA1700 card">
+                <button class="btn" data-board="ASUS Z790 Prime" data-price="220">ASUS Z790 Prime &#8211; &#36;220</button>
+                <button class="btn" data-board="MSI B760 Tomahawk" data-price="160">MSI B760 Tomahawk &#8211; &#36;160</button>
+            </div>
+            <div class="board-group AM5 card">
+                <button class="btn" data-board="Gigabyte X670 Aorus" data-price="250">Gigabyte X670 Aorus &#8211; &#36;250</button>
+                <button class="btn" data-board="ASRock B650 Pro" data-price="180">ASRock B650 Pro &#8211; &#36;180</button>
+            </div>
+            <div class="board-group AM4 card">
+                <button class="btn" data-board="MSI B550M Pro" data-price="100">MSI B550M Pro &#8211; &#36;100</button>
+                <button class="btn" data-board="ASUS TUF B450" data-price="90">ASUS TUF B450 &#8211; &#36;90</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    
+
+    <section class="gpu hidden">
+        <h2>Choose your GPU</h2>
+        <p>Select a graphics card that fits your performance and visual needs.</p>
+        <div class="gpu-cards">
+            <div class="gpu-group gaming card">
+                <button class="btn" data-gpu="RTX 4070" data-price="550">RTX 4070 &#8211; &#36;550</button>
+                <button class="btn" data-gpu="RX 6750 XT" data-price="420">RX 6750 XT &#8211; &#36;420</button>
+            </div>
+            <div class="gpu-group work card">
+                <button class="btn" data-gpu="RTX 4060" data-price="330">RTX 4060 &#8211; &#36;330</button>
+                <button class="btn" data-gpu="Intel Arc A750" data-price="250">Intel Arc A750 &#8211; &#36;250</button>
+            </div>
+            <div class="gpu-group study card">
+                <button class="btn" data-gpu="GTX 1650" data-price="160">GTX 1650 &#8211; &#36;160</button>
+                <button class="btn" data-gpu="RX 6400" data-price="130">RX 6400 &#8211; &#36;130</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    
+
+    <section class="ram hidden">
+        <h2>Choose your RAM</h2>
+        <p>Pick the memory capacity and speed that suits your workflow.</p>
+        <div class="ram-cards">
+            <div class="ram-group gaming card">
+                <button class="btn" data-ram="32GB DDR5 6000MHz" data-price="130">32GB DDR5 6000MHz &#8211; &#36;130</button>
+                <button class="btn" data-ram="16GB DDR4 3600MHz" data-price="60">16GB DDR4 3600MHz &#8211; &#36;60</button>
+            </div>
+            <div class="ram-group work card">
+                <button class="btn" data-ram="64GB DDR5 5600MHz" data-price="220">64GB DDR5 5600MHz &#8211; &#36;220</button>
+                <button class="btn" data-ram="32GB DDR4 3200MHz" data-price="100">32GB DDR4 3200MHz &#8211; &#36;100</button>
+            </div>
+            <div class="ram-group study card">
+                <button class="btn" data-ram="8GB DDR4 2666MHz" data-price="30">8GB DDR4 2666MHz &#8211; &#36;30</button>
+                <button class="btn" data-ram="16GB DDR4 3000MHz" data-price="50">16GB DDR4 3000MHz &#8211; &#36;50</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    <section class="storage hidden">
+        <h2>Choose your Storage</h2>
+        <p>Choose fast and reliable storage for your files and applications.</p>
+        <div class="storage-cards">
+            <div class="storage-group gaming card">
+                <button class="btn" data-storage="1TB NVMe SSD" data-price="90">1TB NVMe SSD &#8211; &#36;90</button>
+                <button class="btn" data-storage="2TB SATA SSD" data-price="130">2TB SATA SSD &#8211; &#36;130</button>
+            </div>
+            <div class="storage-group work card">
+                <button class="btn" data-storage="2TB NVMe SSD" data-price="160">2TB NVMe SSD &#8211; &#36;160</button>
+                <button class="btn" data-storage="4TB HDD + 1TB SSD" data-price="140">4TB HDD + 1TB SSD &#8211; &#36;140</button>
+            </div>
+            <div class="storage-group study card">
+                <button class="btn" data-storage="500GB SSD" data-price="40">500GB SSD &#8211; &#36;40</button>
+                <button class="btn" data-storage="1TB HDD" data-price="45">1TB HDD &#8211; &#36;45</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+    
+    
+
+    <section class="cooling hidden">
+        <h2>Choose your Cooling</h2>
+        <p>Ensure stable performance with proper CPU cooling.</p>
+        <div class="cooling-cards">
+            <div class="cooling-group gaming card">
+                <button class="btn" data-cooler="be quiet! Pure Rock 2" data-price="45">be quiet! Pure Rock 2 &#8211; &#36;45</button>
+                <button class="btn" data-cooler="NZXT Kraken X63" data-price="130">NZXT Kraken X63 &#8211; &#36;130</button>
+            </div>
+            <div class="cooling-group work card">
+                <button class="btn" data-cooler="Noctua NH-D15" data-price="100">Noctua NH-D15 &#8211; &#36;100</button>
+                <button class="btn" data-cooler="DeepCool AK620" data-price="70">DeepCool AK620 &#8211; &#36;70</button>
+            </div>
+            <div class="cooling-group study card">
+                <button class="btn" data-cooler="Stock AMD Wraith" data-price="0">Stock AMD Wraith &#8211; &#36;0</button>
+                <button class="btn" data-cooler="Cooler Master i71C" data-price="25">Cooler Master i71C &#8211; &#36;25</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    
+
+    <section class="psu hidden">
+        <h2>Choose your Power Supply</h2>
+        <p>Pick a PSU with enough wattage and reliability for your build.</p>
+        <div class="psu-cards">
+            <div class="psu-group gaming card">
+                <button class="btn" data-psu="Corsair RM850x" data-price="140">Corsair RM850x &#8211; &#36;140</button>
+                <button class="btn" data-psu="Seasonic Focus GX-750" data-price="120">Seasonic Focus GX-750 &#8211; &#36;120</button>
+            </div>
+            <div class="psu-group work card">
+                <button class="btn" data-psu="Be Quiet! Straight Power 11" data-price="130">Be Quiet! Straight Power 11 &#8211; &#36;130</button>
+                <button class="btn" data-psu="Cooler Master MWE Gold 750" data-price="100">Cooler Master MWE Gold 750 &#8211; &#36;100</button>
+            </div>
+            <div class="psu-group study card">
+                <button class="btn" data-psu="Thermaltake Smart 500W" data-price="45">Thermaltake Smart 500W &#8211; &#36;45</button>
+                <button class="btn" data-psu="Aerocool VX Plus 550" data-price="40">Aerocool VX Plus 550 &#8211; &#36;40</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    
+    <section class="case hidden">
+        <h2>Choose your Case</h2>
+        <p>Select a case that fits your components and style.</p>
+        <div class="case-cards">
+            <div class="case-group gaming card">
+                <button class="btn" data-case="NZXT H510" data-price="80">NZXT H510 &#8211; &#36;80</button>
+                <button class="btn" data-case="Lian Li Lancool 216" data-price="100">Lian Li Lancool 216 &#8211; &#36;100</button>
+            </div>
+            <div class="case-group work card">
+                <button class="btn" data-case="Fractal Design Define 7" data-price="160">Fractal Design Define 7 &#8211; &#36;160</button>
+                <button class="btn" data-case="Be Quiet! Silent Base 802" data-price="150">Be Quiet! Silent Base 802 &#8211; &#36;150</button>
+            </div>
+            <div class="case-group study card">
+                <button class="btn" data-case="Cooler Master Q300L" data-price="55">Cooler Master Q300L &#8211; &#36;55</button>
+                <button class="btn" data-case="Zalman T6" data-price="40">Zalman T6 &#8211; &#36;40</button>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+
+    <section class="summary hidden">
+        <h2>Your Build Summary</h2>
+        <div class="summary-cards">
+            <div class="card">
+                <div>
+                    <ul id="summary-list"></ul>
+                </div>
+                <div class="summary-total">
+                    <span id="total-price">$0.00</span>
+                    <p>Total Price </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+      <p>&#169; PCCraft. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="./images/icons8-facebook.svg" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./images/icons8-instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://x.com/" target="_blank"
+          ><img src="./images/icons8-x.svg" alt="X"
+        /></a>
+      </div>
+    </footer>
+    <script src="./script_main.js"></script>
+    <script src="./makeYourOwnPC.js"></script>
+  </body>
+</html>

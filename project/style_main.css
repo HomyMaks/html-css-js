@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #111;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 1.5em;
+  text-decoration: none;
+  color: #00bfff;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  
+}
+
+.hero-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  /* animation: fadeIn 2s ease-out; */
+}
+
+.hero-content p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.hero-benefits {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+  color: #ccc;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.hero-content .card {
+  display: inline-block;
+  width: 95%;
+}
+
+.hero-benefits li {
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  margin-top: 2em;
+  padding: 0.8em 2em;
+  background: #00bfff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);  
+  text-align: center;
+  border-style: none;
+}
+
+.btn:active {
+  animation: blink 0.4s linear;
+}
+
+.btn:hover {
+  background: #007bff;
+}
+.discover, section{
+  color: #fff;
+  text-align: center;
+  padding: 2em 2em;
+}
+
+section > p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  color: #ccc;      
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.discover-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 2em;
+  border-radius: 8px;
+  flex: 1 1 300px; 
+  max-width: 600px;
+  text-align: left; 
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+  border: 1px solid rgba(30, 144, 255, 0.2);
+  box-shadow:
+    inset 0 0 20px rgba(24, 117, 209, 0.1),
+    0 0 20px rgba(30, 144, 255, 0.1),
+    0 0 10px rgba(0,0,0,0.5);
+  transition: box-shadow 0.6s ease, opacity 1.5s ease, transform 1.5s ease;
+}
+
+.card:hover {
+  box-shadow:
+    inset 0 0 25px rgba(30, 144, 255, 0.15),
+    0 0 40px rgba(30, 144, 255, 0.4),
+    0 0 15px rgba(0,0,0,0.6);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card h3 {
+  color: #1e90ff;
+  margin-bottom: 0.7em;
+}
+
+.card p {
+  color: #e0e0e0;
+  font-size: 0.95em;
+}
+
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.socials a img {
+  width: 24px;
+  margin: 0 0.5em;
+  transition: transform 0.3s;
+}
+
+.socials a:hover img {
+  transform: scale(1.01);
+}
+
+.socials {
+  margin-top: 0.4em;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #1e90ff, #00aaff);
+  margin: 4em auto;
+  width: 80%;
+  border-radius: 2px;
+}
+
+/* .service {
+  color: #fff;
+  text-align: center;
+  padding: 2em 2em;
+} */
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.card > p {
+  margin-bottom: 0.7em;
+}
+
+.service .card {
+  padding: 2em;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 900px;
+  text-align: left;
+  color: #fff;
+  opacity: 0;
+}
+
+.service .card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service .card h3 {
+  color: #1e90ff;
+  margin-bottom: 0.7em;
+}
+
+.service .card p {
+  color: #e0e0e0;
+  font-size: 0.95em;
+}
+
+.service .btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 2em;
+  background: #00bfff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.service .btn:hover {
+  background: #007bff;
+}
+
+.card .btn {
+  display: block;
+  margin: 2em auto 0 auto;
+}
+
+/* .contact {
+  color: #fff;
+  text-align: center;
+  padding: 2em 2em;
+} */
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 0.8;
+}
+
+.contact > p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.contact .card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact .card h3 {
+  color: #1e90ff;
+  margin-bottom: 1em;
+}
+
+.contact .card p {
+  color: #e0e0e0;
+  margin-bottom: 3em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1.5em;
+  flex: 1.2;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1em;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #1e90ff;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  background: #00bfff;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0;
+}
+
+.contact-form .btn:hover {
+  background: #007bff;
+}
+
+@keyframes blink {
+  0%, 100% { background-color: #1e90ff; }
+  50% { background-color: #00bfff; }
+}
+
+@media screen and (max-width: 540px) {
+  .contact-card {
+    flex-direction: column;
+  }
+  body {
+    font-size: 0.7em;
+  }
+}

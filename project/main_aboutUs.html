@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCCraft</title>
+  <link rel="stylesheet" href="./style_main.css">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">PCCraft</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#discover">Discover</a>
+      <a href="#service">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Tailored computer assembly & support</h1>
+      <p>We assist individuals in assembling or purchasing the perfect computer tailored to their needs.</p>
+      <div class="card">
+        <ul class="hero-benefits">
+          <li>Custom-built computers tailored to your needs</li>
+          <li>Clear guidance without tech jargon</li>
+          <li>Fast setup and ongoing support</li>
+        </ul>
+        <a href="#discover" class="btn">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="discover" id="discover">
+    <h2>Discover more about us</h2>
+    <p>Learn about our mission, vision, and dedication to fulfilling your computing requirements.</p>
+    <div class="discover-cards">
+      <div class="card">
+        <h3>Our journey</h3>
+        <p>Join us at PCCraft, where we take pride in being your reliable allies in the world of computers. 
+          Our narrative revolves around a commitment to helping you navigate your tech needs, 
+          ensuring that you find or build the ideal system that fits your lifestyle and aspirations.</p>
+      </div>
+      <div class="card">
+        <h3>Our mission</h3>
+        <p>At PCCraft, our dedicated team is passionate about empowering your computing journey. 
+          We promise to provide solutions that are precisely crafted to meet your specific requirements.
+          Count on us to facilitate your tech triumphs, ushering you into a realm of endless possibilities.</p>
+      </div>
+    </div>
+  </section>  
+
+  <hr class="divider">
+
+  <section class="service" id="service">
+    <h2>Our Services</h2>
+    <p>We offer tailored PC assembly and expert support to help you build the perfect system.</p>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Tailored computer assembly</h3>
+        <p>Utilize our expertise to create a custom-built PC that aligns perfectly with your needs. 
+          We evaluate your preferences, integrate the latest components, 
+          and ensure a seamless assembly process for optimal performance.</p>
+        
+        <h3>Affordable purchasing options</h3>
+        <p>Stay ahead with our selection of ready-to-use computers. 
+          We offer budget-friendly options that cater to your unique requirements, 
+          empowering you to make informed choices without compromising quality.</p>        
+        
+        <h3>Configurator Access</h3>
+        <p>Use our interactive configurator to build your dream PC step by step — with real-time guidance and pricing. 
+          Whether you're a beginner or a seasoned builder, our tool simplifies the process and helps you make confident choices.</p>
+        <div class="btn-wrapper">
+          <a href="./makeYourOwnPc.html" class="btn">Make Your Own PC</a>
+        </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We welcome your inquiries and feedback — feel free to reach out!</p>
+    <div class="contact-cards">
+      <div class="card contact-card">
+        <div class="contact-info">
+          <h3>Email</h3><p> info@pccraft.com</p>
+          <h3>Phone:</h3><p> 646-876-5974</p>
+          <h3>Address:</h3><p> 3961 Small Street, New York, United States</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name *" required required oninvalid="this.setCustomValidity('Please enter a valid name')"
+          oninput="this.setCustomValidity('')">
+          <input type="email" placeholder="Your Email *" required oninvalid="this.setCustomValidity('Please enter a valid email')"
+          oninput="this.setCustomValidity('')">
+          <textarea placeholder="Type your message here..." rows="5" maxlength="500"></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <p>&#169; PCCraft. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/" target="_blank"><img src="./images/icons8-facebook.svg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="./images/icons8-instagram.svg" alt="Instagram"></a>
+      <a href="https://x.com/" target="_blank"><img src="./images/icons8-x.svg" alt="X"></a>
+    </div>
+  </footer>
+  <script src="./script_main.js"></script>
+</body>
+</html>
